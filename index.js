@@ -256,10 +256,10 @@ const newArray = [];
 
     //checking every index in the array 
 
-    if(array[i][key1] > 100){ 
+    if(array[i][key1] ){ 
 
       //if statement exists pushing to array
-      newArray.push(array[i][key2]);
+      newArray.push(array=artists.split
     }
 }
 return newArray
