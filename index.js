@@ -295,18 +295,23 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array, array20) {
-  const artist20 = [{
-    id: 20,
-    name: "Adam Ivey", 
-    years: "1994 - july 16",
-    genre: "Web Design", 
-    nationality: "american",
-    bio: "this is my sprint challenge. I love Javascript"
-  }] 
-   artists.push.apply(array,array20);
+function addArtist(array,object) {
+  const newarray =[];
+  
+   newarray.push(object);
+
+   return newarray;
 }
-console.log( 'task 6', addArtist(artists));
+const object10 = {
+  id: 20,
+  name: "Adam Ivey", 
+  years: "1994 - july 16",
+  genre: "Web Design", 
+  nationality: "american",
+  bio: "this is my sprint challenge. I love Javascript"
+}
+
+console.log( 'task 6', addArtist(artists, object10));
 
 
 
