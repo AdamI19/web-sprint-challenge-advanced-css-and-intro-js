@@ -208,7 +208,7 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log('task 1',artists[0].name);
+console.log('task 1', artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
 console.log('task 1', artists[2].bio);
@@ -245,18 +245,28 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-// function get20s(array,string, born, died) {
-//   const newArray = [];
-//   for(let i = 0; i < array.length; i++){
-//     if(array[i].includes(string)){
-//       newArray.push(array[i]);
-//   }
-//   return newArray;
-// }
+function get20s(array,string, born, died) {
 
-// console.log('task 4', get20s(artists, "years"));
+//making new array
+const newArray = [];
 
-//still figuring out//
+//looping through the array provided
+
+  for(let i = 0; i < array.length; i++){
+
+    //checking every index in the array 
+
+    if(array[i][key1] > 100){ 
+
+      //if statement exists pushing to array
+      newArray.push(array[i][key2]);
+    }
+}
+return newArray
+}
+console.log('task 7', lotsOfArt(artists, 'years', 'name'));
+
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -270,7 +280,7 @@ For example, if removeArtist is invoked with the artists array and the number 0,
 
 function removeArtist(array, number) {
   artists.splice(artists, [1] )
-  return array, array.length;
+  return array.length;
 }
 
 console.log('task 5', removeArtist(artists, [0]));
